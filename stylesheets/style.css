@@ -1,9 +1,310 @@
+@font-face {
+    font-family: 'swDisplay';
+    src: url('../fonts/swDisplay500.woff2') format('woff2'),
+        url('../fonts/swDisplay700.woff2') format('woff2'),
+        url('../fonts/swDisplayItalic700.woff2') format('woff2');
+}
+
 .desktop-only {
     display: none;
 }
 
 .mobile-only {
     display: initial;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: SwDisplay, sans-serif;
+}
+
+h1 {
+    font-size: 39px;
+}
+
+h3 {
+    color: #68B190;
+    font-size: 18px;
+}
+
+p,
+a {
+    font-family: poppins, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home {
+    width: 40px;
+    height: 48px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu button {
+    padding: 0;
+}
+
+.sidebar-toggle {
+    width: 24px;
+    height: 24px;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 20px 0 20px 0;
+}
+
+.green-button {
+    background-color: #68B190;
+}
+
+.brown-button {
+    background-color: #AB3C20;
+}
+
+.transparent-button {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#main-section {
+    background-image: url("../images/historical-village-center-holloko-region-northern-hungary-unesco-tradi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 68px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#main-section h1,
+p {
+    color: white;
+}
+
+#main-section h1 {
+    margin-bottom: 30px;
+    text-wrap: nowrap;
+}
+
+#main-section h3 {
+    padding-bottom: 10px;
+}
+
+#main-section .green-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about-us {
+    background-color: #AB3C20;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#about-us h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+#map {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#map a {
+    font-family: SwDisplay, sans-serif;
+    font-size: 16px;
+}
+
+.map-first {
+    position: absolute;
+    bottom: 46%;
+    left: 20px;
+}
+
+.map-second {
+    position: absolute;
+    top: 11%;
+    right: 20px;
+}
+
+#guszti-house-details {
+    background-color: #f0f7f4;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#guszti-house-details p {
+    color: black;
+}
+
+#guszti-house-details h4 {
+    font-size: 14px;
+    font-family: poppins, sans-serif;
+    font-weight: 900;
+}
+
+.who-is-it-for {
+    background-color: #68B190;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 0 20px 20px 20px;
+    color: white;
+}
+
+.who-is-it-for h4 {
+    font-weight: bold !important;
+    padding-bottom: 10px;
+}
+
+.who-is-it-for p {
+    color: white !important;
+}
+
+#orzsi-house-details {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#orzsi-house-details h2 {
+    padding-bottom: 20px;
+}
+
+#orzsi-house-details p {
+    color: black;
+}
+
+#orzsi-house-details h4 {
+    font-size: 14px;
+    font-family: poppins, sans-serif;
+    font-weight: 900;
+}
+
+#prices {
+    background-color: #f0f7f4;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#prices p {
+    color: black;
+}
+
+.available-houses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.available-house {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.available-house h4 {
+    color: #68B190;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.available-house p {
+    margin-bottom: 0;
+}
+
+#gallery {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.gallery-images {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.gallery-images img {
+    margin-bottom: 15px;
+}
+
+#equipment {
+    background-image: url(../images/Group\ 364.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#equipment h2 {
+    color: white;
+}
+
+.equipment-cards {
+    display: flex;
 }
 
 @media screen and (min-width: 768px) {

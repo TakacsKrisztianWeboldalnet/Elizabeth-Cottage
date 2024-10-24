@@ -22,30 +22,30 @@
                 <a href="#">VENDÉGHÁZAINK</a>
                 <a href="#">ÁRAINK</a>
                 <a class="desktop-only" href="#">FELSZERELTSÉG</a>
-                <a href="#">TÚRÁK</a>
-                <a href="#">LÁTNIVALÓK</a>
-                <a href="#">GALÉRIA</a>
-                <a href="#">GYIK</a>
-                <button><a href="#">FOGLALÁS</a></button>
+                <a class="desktop-only" href="#">TÚRÁK</a>
+                <a class="desktop-only" href="#">LÁTNIVALÓK</a>
+                <a class="desktop-only" href="#">GALÉRIA</a>
+                <a class="desktop-only" href="#">GYIK</a>
+                <button class="desktop-only"><a href="#">FOGLALÁS</a></button>
+                <button class="mobile-only"><img class="sidebar-toggle" src="./images/bars-solid.svg"></button>
             </div>
         </nav>
     </header>
     <div class="main">
-        <section class="main-section">
-            <h2>Elizabeth Cottage Vendégházak</h2>
-            <h1>ÉRTÉK<img src="./images/Icon ionic-md-flower.svg" alt="virág">TÚRA<img
-                    src="./images/Icon ionic-md-flower.svg" alt="virág">BENCZÚRFALVA<img class="mobile-only"
+        <section id="main-section">
+            <h3><i>Elizabeth Cottage Vendégházak</h3></i>
+            <h1>ÉRTÉK <img src="./images/Icon ionic-md-flower.svg" alt="virág"> TÚRA <br class="mobile-only"><img
+                    src="./images/Icon ionic-md-flower.svg" alt="virág"> BENCZÚRFALVA <img class="mobile-only"
                     src="./images/Icon ionic-md-flower.svg" alt="virág"></h1>
             <p>Álomszép túrák, kulturális programok, maximális kényelemben Palócföldön</p>
             <p>Ha Te is szereted az ég kékjét, a reggel csendjét, az orgona illatát, ha szeretsz mezítláb tótágast állni
                 a fűben, gyermekeid kezét fogva nagyokat sétálni az erdőben vagy egy jó bort kortyolva nagyokat
-                beszélgetni…akkor megérkeztél. Szeretettel várunk!</p>
-            <div class="main-section-links">
-                <button><a href="#">TÖBBET SZERETNÉK TUDNI</a></button>
-                <button><a href="#">FOGLALOK</a></button>
-            </div>
+                beszélgetni…akkor megérkeztél.</p>
+            <p>Szeretettel várunk!</p>
+            <button class="green-button"><a href="#">TÖBBET SZERETNÉK TUDNI</a></button>
+            <button class="transparent-button"><a href="#">FOGLALOK</a></button>
         </section>
-        <section class="about-us">
+        <section id="about-us">
             <h2>Ide invitálunk Benneteket</h2>
             <p>Benczúrfalva egy pici falu, eldugva a nógrádi dombság lankái között, ahonnan a technika vívmányai,
                 úgymint térerő éppúgy hiányoznak, mint a szmog, zaj és a nagyvárosi tömeg. Azonban a szép erdős
@@ -54,12 +54,12 @@
             <p>Benczúrfalva tökéletes helyszín a felhőtlen kikapcsolódáshoz, a nagy sétákhoz, kalandtúrákhoz vagy az
                 estébe nyúló beszélgetésekhez.</p>
         </section>
-        <section class="map">
-            <button><a href="#">Örzsi Ház</a></button>
+        <section id="map">
+            <button class="green-button map-first"><a href="#">Örzsi Ház</a></button>
             <img src="./images/Örzsi_Ház_Guszti_Ház_1.png" alt="Örzsi Ház, Guszti Ház felülről">
-            <button><a href="#">Guszti Ház</a></button>
+            <button class="green-button map-second"><a href="#">Guszti Ház</a></button>
         </section>
-        <section class="guszti-house-details">
+        <section id="guszti-house-details">
             <div class="guszti-house-details-text">
                 <h3>Vendégházaink</h3>
                 <h2>Guszti Ház</h2>
@@ -68,41 +68,30 @@
                     szobái a földszinten és az emeleten találhatóak, melyek mindegyike tágas, kényelmes, légkondicionált
                     szoba.</p>
                 <h4>SZOBATÍPUSOK:</h4>
-                <ul>
-                    <li>
-                        <p>Földszint: 2 db Franciaágyas szobák saját fürdőszobával</p>
-                    </li>
-                    <li>
-                        <p>Emelet: 1 db Franciaágyas szoba fürdőszoba nélkül.</p>
-                    </li>
-                    <li>
-                        <p>1 db Családi szoba saját fürdőszobával. Ebben a nagy légterű szobában egy franciaágy és 2 db
-                            szimpla ágy található.</p>
-                    </li>
-                </ul>
+                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                <p>Földszint: 2 db Franciaágyas szobák saját fürdőszobával</p>
+                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                <p>Emelet: 1 db Franciaágyas szoba fürdőszoba nélkül.</p>
+                <p>1 db Családi szoba saját fürdőszobával. Ebben a nagy légterű szobában egy franciaágy és 2 db
+                    szimpla ágy található.</p>
                 <p>A szobákhoz közös étkező és igényesen kialakított, jól felszerelt konyha tartozik.</p>
-                <button><a href="#">FOGLALÁS</a></button>
             </div>
             <div class="guszti-house-details-img">
-                <img src="./images/slider-5053.jpg" alt="Guszti Ház">
+                <img class="desktop-only" src="./images/slider-5053.jpg" alt="Guszti Ház">
                 <div class="who-is-it-for">
                     <h4>KIKNEK AJÁNLJUK?</h4>
                     <p>Elsősorban nagycsaládoknak, baráti társaságoknak. Foglalására minimum 2 szoba és 2 éjszaka
                         foglalása esetén van lehetőség.</p>
                 </div>
+                <button class="green-button"><a href="#">FOGLALÁS</a></button>
             </div>
         </section>
-        <section class="orzsi-house-details">
+        <section id="orzsi-house-details">
             <div class="orzsi-house-details-img">
-                <img src="./images/slider-5053.jpg" alt="Örzsi Ház">
-                <div class="who-is-it-for">
-                    <h4>KIKNEK AJÁNLJUK?</h4>
-                    <p>Elsősorban pároknak, kisgyermekes családoknak. Foglalására minimum 2 éjszaka foglalása esetén van
-                        lehetőség.</p>
-                </div>
+                <img class="desktop-only" src="./images/slider-5053.jpg" alt="Örzsi Ház">
             </div>
             <div class="orzsi-house-details-text">
-                <h3>Vendégházaink</h3>
+                <h3 class="desktop-only">Vendégházaink</h3>
                 <h2>Örzsi Ház</h2>
                 <p>Örzsi Vendégházunk elosztása a történelmi háromosztású paraszti házak kialakítását tükrözte: tiszta
                     szoba, konyha, kamra, előtte gang deszkával ellátott folyosóval.</p>
@@ -110,19 +99,20 @@
                     megnöveltük. Az eredeti konyha és kamra helyén tágas nappalit és jól felszerelt étkező-konyhát
                     alakítottunk ki.</p>
                 <h4>SZOBATÍPUSOK:</h4>
-                <ul>
-                    <li>
-                        <p>1 db Családi szoba saját fürdőszobával.</p>
-                    </li>
-                    <li>
-                        <p>Ebben a nagy légterű szobában egy franciaágy és egy kinyitható kanapéágy található. Ebből a
-                            szobatípusból 1 db található a házban.</p>
-                    </li>
-                </ul>
-                <button><a href="#">FOGLALÁS</a></button>
+                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                <p>1 db Családi szoba saját fürdőszobával.</p>
+                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                <p>Ebben a nagy légterű szobában egy franciaágy és egy kinyitható kanapéágy található. Ebből a
+                    szobatípusból 1 db található a házban.</p>
+                <div class="who-is-it-for">
+                    <h4>KIKNEK AJÁNLJUK?</h4>
+                    <p>Elsősorban pároknak, kisgyermekes családoknak. Foglalására minimum 2 éjszaka foglalása esetén van
+                        lehetőség.</p>
+                </div>
+                <button class="green-button"><a href="#">FOGLALÁS</a></button>
             </div>
         </section>
-        <section class="prices">
+        <section id="prices">
             <h2>Áraink</h2>
             <p>Az Örzsi Házat és a Guszti Házat egyszerre és külön-külön is foglalhatjátok. Egyidejű foglalás esetén a
                 két Házban 10
@@ -140,19 +130,19 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery">
             <h2>Galéria</h2>
             <div class="gallery-images">
-                <img src="./images/galéria1.png" alt="padlástér berendezve">
-                <img src="./images/galéria2.png" alt="szoba berendezve">
-                <img src="./images/galéria3.png" alt="ház kívülről">
-                <img src="./images/galéria4.png" alt="kerti borozás">
-                <img src="./images/galéria5.png" alt="kinézés az ablakon, egy házat látva">
-                <img src="./images/galéria6.png" alt="kanapé, és mellette egy asztal lámpával és virággal">
+                <img src="./images/galéria1.jpg" alt="padlástér berendezve">
+                <img src="./images/galéria2.jpg" alt="szoba berendezve">
+                <img src="./images/galéria3.jpg" alt="ház kívülről">
+                <img src="./images/galéria4.jpg" alt="kerti borozás">
+                <img src="./images/galéria5.jpg" alt="kinézés az ablakon, egy házat látva">
+                <img src="./images/galéria6.jpg" alt="kanapé, és mellette egy asztal lámpával és virággal">
             </div>
-            <button>TOVÁBBI KÉPEK</button>
+            <button class="brown-button"><a href="#">TOVÁBBI KÉPEK</a></button>
         </section>
-        <section class="equipment">
+        <section id="equipment">
             <h2>Felszereltség</h2>
             <div class="equipment-cards">
                 <div class="equipment-card">
@@ -163,35 +153,35 @@
                     <img src="./images/Group 366.svg" alt="lábas">
                     <p>Jól felszerelt konyha evőeszközökkel, sütés-főzés kellékeivel</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 367.svg" alt="ágy">
                     <p>Minőségi matracok, kényelmes, nagy franciaágyak</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 368.svg" alt="törölköző">
                     <p>Ágynemű antiallergén anyagokból, törölközők</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 369.svg" alt="kozmetikumok">
                     <p>Organikus, gyógynövény alapú fürdőszobai kozmetikumok,</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 374.svg" alt="wi-fi">
                     <p>Wi-fi, Streaming csatorna (Netflix)</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 373.svg" alt="kávéfőző">
                     <p>Kapszulás kávégép, kávékapszulákkal (Nespresso)</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 372.svg" alt="fürdőkád">
                     <p>Babáknak etetőszék, fürdetőkád</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 371.svg" alt="papírsárkány">
                     <p>Gyerekeknek kerti játszó, homokozó, mesekönyvek, társasjátékok</p>
                 </div>
-                <div class="equipment-card">
+                <div class="equipment-card desktop-only">
                     <img src="./images/Group 370.svg" alt="napozóágy">
                     <p>Kerti napozóágyak, hintaágyak</p>
                 </div>
@@ -203,7 +193,7 @@
                 <input type="radio" class="selected">
             </div>
         </section>
-        <section class="hiking-tours">
+        <section id="hiking-tours">
             <div class="hiking-tours-intro">
                 <h2>Túráink</h2>
                 <p>Vendégházaink az <a>Északi Zöld</a> és a <a>Mária Út</a> túra útvonalán találhatóak. A Házból kilépve
@@ -262,7 +252,7 @@
                 <input type="radio" class="selected">
             </div>
         </section>
-        <section class="tourist-attractions">
+        <section id="tourist-attractions">
             <img src="./images/Icon ionic-ios-arrow-back.svg" alt="vissza">
             <div class="tourist-attraction">
                 <div class="tourist-attraction-img">
@@ -285,7 +275,7 @@
                 <input type="radio" class="selected">
             </div>
         </section>
-        <section class="our-valuable-places">
+        <section id="our-valuable-places">
             <div class="our-valuable-place">
                 <div class="our-valuable-place-details">
                     <h3>Értékeink</h3>
@@ -305,7 +295,7 @@
                 </div>
             </div>
         </section>
-        <section class="faq">
+        <section id="faq">
             <h2>Gyakran Ismételt Kérdések</h2>
             <div class="questions">
                 <div class="question">
@@ -379,7 +369,8 @@
             </div>
             <div class="contact-info">
                 <img src="./images/Icon ionic-md-pin.svg" alt="helyszín">
-                <a href="https://maps.app.goo.gl/q1n8KsveogfWD4qe9" target="_blank">3170 Benczúrfalva, Hámán Kató utca 2.</a>
+                <a href="https://maps.app.goo.gl/q1n8KsveogfWD4qe9" target="_blank">3170 Benczúrfalva, Hámán Kató utca
+                    2.</a>
             </div>
         </div>
         <div class="footer-copyright">
