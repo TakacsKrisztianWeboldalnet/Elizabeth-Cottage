@@ -144,59 +144,65 @@
         </section>
         <section id="equipment">
             <h2>Felszereltség</h2>
-            <div class="equipment-cards">
-                <div class="equipment-card">
-                    <img src="./images/Group 365.svg" alt="fa">
-                    <p>Természetközeli szállás</p>
+            <div class="equipment-cards-container">
+                <button class="equipment-cards-previous mobile-only"><img src="./images/ion--ios-arrow-back.png"
+                        alt="vissza"></button>
+                <div class="equipment-cards">
+                    <div class="equipment-card">
+                        <img src="./images/Group 365.svg" alt="fa">
+                        <p>Természetközeli szállás</p>
+                    </div>
+                    <div class="equipment-card">
+                        <img src="./images/Group 366.svg" alt="lábas">
+                        <p>Jól felszerelt konyha evőeszközökkel, sütés-főzés kellékeivel</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 367.svg" alt="ágy">
+                        <p>Minőségi matracok, kényelmes, nagy franciaágyak</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 368.svg" alt="törölköző">
+                        <p>Ágynemű antiallergén anyagokból, törölközők</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 369.svg" alt="kozmetikumok">
+                        <p>Organikus, gyógynövény alapú fürdőszobai kozmetikumok,</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 374.svg" alt="wi-fi">
+                        <p>Wi-fi, Streaming csatorna (Netflix)</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 373.svg" alt="kávéfőző">
+                        <p>Kapszulás kávégép, kávékapszulákkal (Nespresso)</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 372.svg" alt="fürdőkád">
+                        <p>Babáknak etetőszék, fürdetőkád</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 371.svg" alt="papírsárkány">
+                        <p>Gyerekeknek kerti játszó, homokozó, mesekönyvek, társasjátékok</p>
+                    </div>
+                    <div class="equipment-card desktop-only">
+                        <img src="./images/Group 370.svg" alt="napozóágy">
+                        <p>Kerti napozóágyak, hintaágyak</p>
+                    </div>
                 </div>
-                <div class="equipment-card">
-                    <img src="./images/Group 366.svg" alt="lábas">
-                    <p>Jól felszerelt konyha evőeszközökkel, sütés-főzés kellékeivel</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 367.svg" alt="ágy">
-                    <p>Minőségi matracok, kényelmes, nagy franciaágyak</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 368.svg" alt="törölköző">
-                    <p>Ágynemű antiallergén anyagokból, törölközők</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 369.svg" alt="kozmetikumok">
-                    <p>Organikus, gyógynövény alapú fürdőszobai kozmetikumok,</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 374.svg" alt="wi-fi">
-                    <p>Wi-fi, Streaming csatorna (Netflix)</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 373.svg" alt="kávéfőző">
-                    <p>Kapszulás kávégép, kávékapszulákkal (Nespresso)</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 372.svg" alt="fürdőkád">
-                    <p>Babáknak etetőszék, fürdetőkád</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 371.svg" alt="papírsárkány">
-                    <p>Gyerekeknek kerti játszó, homokozó, mesekönyvek, társasjátékok</p>
-                </div>
-                <div class="equipment-card desktop-only">
-                    <img src="./images/Group 370.svg" alt="napozóágy">
-                    <p>Kerti napozóágyak, hintaágyak</p>
-                </div>
+                <button class="equipment-cards-next mobile-only"><img src="./images/ion--ios-arrow-forward.png"
+                        alt="előre"></button>
             </div>
             <div class="equipment-selection mobile-only">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio" class="selected">
+                <button class="selection-button">‎</button>
+                <button class="selection-button">‎</button>
+                <button class="selection-button selected">‎</button>
+                <button class="selection-button">‎</button>
             </div>
         </section>
         <section id="hiking-tours">
             <div class="hiking-tours-intro">
                 <h2>Túráink</h2>
-                <p>Vendégházaink az <a>Északi Zöld</a> és a <a>Mária Út</a> túra útvonalán találhatóak. A Házból kilépve
+                <p>Vendégházaink az Északi Zöld és a Mária Út túra útvonalán találhatóak. A Házból kilépve
                     könnyed túrákat tehettek a
                     dimbes-dombos vidéken és gyönyörködhettek az elétek táruló panorámában. A hosszabb bakancsos túrák
                     és kerékpározás
@@ -205,23 +211,31 @@
                     túrakerékpárral érinthetik a környék legszebb magaslatait.</p>
             </div>
             <div class="hiking-tour">
-                <img src="./images/Icon ionic-ios-arrow-back.svg" alt="vissza">
+                <div class="hiking-tour-image">
+                    <img src="./images/mountain-landscape-with-sunny-sky-natural-outdoor-travel-background-slovakia-low-tatras_527096-18273.jpeg"
+                        alt="egy férfi túrázik">
+                </div>
+                <div class="hiking-tour-title">
+                    <button class="hiking-tour-back"><img src="./images/Icon ionic-ios-arrow-back.svg"
+                            alt="vissza"></button>
+                    <h2>Palóc Grand Canyon</h2>
+                    <button class="hiking-tour-next"><img src="./images/Icon ionic-ios-arrow-back (1).svg"
+                            alt="előre"></button>
+                </div>
                 <div class="hiking-tour-details">
-                    <h3>Palóc Grand Canyon</h3>
                     <p>Egy varázslatosi szurdokvölgy meredek, néhol különlegesen ívelt, a sárga és barna kőzetek
                         változatos játékával.</p>
-                    <p>A 15-20 méter mélyen és nagyjából 400 méter hosszan bevágódott, rendkívül látványos kis szoros
+                    <p>A 15-20 méter mélyen és nagyjából 400 méter hosszan bevágódott, rendkívül látványos kis
+                        szoros
                         csodás
                         látnivaló.</p>
-                    <button><a href="#">Bővebben</a></button>
+                    <button class="transparent-button"><a href="#">BŐVEBBEN</a></button>
                     <div class="hiking-route-map">
-                        <iframe
-                            src="https://www.alltrails.com/widget/map/benczuron66-81ca026?elevationDiagram=false&amp;u=m&amp;sh=edj52w"
-                            width="100%" height="100%" style="border: 0; overflow: hidden"></iframe>
+                        <iframe src="https://www.alltrails.com/widget/map/benczuron66-81ca026?elevationDiagram=false&amp;u=m&amp;sh=edj52w" width="100%" height="100%" style="border: 0; overflow: hidden"></iframe>
                     </div>
                     <div class="hiking-route-icons">
                         <div class="hiking-route-icon">
-                            <img src="./images/Path 73.svg" alt="hossz">
+                            <img src="./images/Path 73.png" alt="hossz">
                             <p>66 km</p>
                         </div>
                         <div class="hiking-route-icon">
@@ -237,23 +251,17 @@
                             <img src="./images/Group 326.svg" alt="egyedül">
                         </div>
                     </div>
+                    <button class="green-button"><a href="#">TÚRAÚTVONAL LETÖLTÉSE</a></button>
                 </div>
-                <div class="hiking-tour-image">
-                    <img src="./images/mountain-landscape-with-sunny-sky-natural-outdoor-travel-background-slovakia-low-tatras_527096-18273.jpeg"
-                        alt="egy férfi túrázik">
-                </div>
-                <img src="./images/Icon ionic-ios-arrow-back (2).svg.svg" alt="előre">
             </div>
-            <button><a href="#"></a>TÚRAÚTVONAL LETÖLTÉSE</button>
             <div class="hiking-tour-selection mobile-only">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio" class="selected">
+                <button class="hiking-tour-selection-button">‎</button>
+                <button class="hiking-tour-selection-button">‎</button>
+                <button class="hiking-tour-selection-button">‎</button>
+                <button class="hiking-tour-selection-button selected">‎</button>
             </div>
         </section>
         <section id="tourist-attractions">
-            <img src="./images/Icon ionic-ios-arrow-back.svg" alt="vissza">
             <div class="tourist-attraction">
                 <div class="tourist-attraction-img">
                     <img src="./images/sight-img1.jpg" alt="hand-chair-on-hill">
