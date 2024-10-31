@@ -43,7 +43,8 @@
                 beszélgetni…akkor megérkeztél.</p>
             <p>Szeretettel várunk!</p>
             <button class="green-button"><a href="#">TÖBBET SZERETNÉK TUDNI</a></button>
-            <button class="transparent-button"><a href="#">FOGLALOK</a></button>
+            <br>
+            <button class="transparent-white-button"><a href="#">FOGLALOK</a></button>
         </section>
         <section id="about-us">
             <h2>Ide invitálunk Benneteket</h2>
@@ -193,10 +194,10 @@
                         alt="előre"></button>
             </div>
             <div class="equipment-selection mobile-only">
-                <button class="selection-button">‎</button>
-                <button class="selection-button">‎</button>
-                <button class="selection-button selected">‎</button>
-                <button class="selection-button">‎</button>
+                <button class="equipment-selection-button">‎</button>
+                <button class="equipment-selection-button">‎</button>
+                <button class="equipment-selection-button selected">‎</button>
+                <button class="equipment-selection-button">‎</button>
             </div>
         </section>
         <section id="hiking-tours">
@@ -229,9 +230,10 @@
                         szoros
                         csodás
                         látnivaló.</p>
-                    <button class="transparent-button"><a href="#">BŐVEBBEN</a></button>
+                    <button class="transparent-black-button"><a href="#">BŐVEBBEN</a></button>
                     <div class="hiking-route-map">
-                        <iframe src="https://www.alltrails.com/widget/map/benczuron66-81ca026?elevationDiagram=false&amp;u=m&amp;sh=edj52w" width="100%" height="100%" style="border: 0; overflow: hidden"></iframe>
+                        <iframe
+                            src="https://www.alltrails.com/widget/map/benczuron66-81ca026?elevationDiagram=false&amp;u=m&amp;sh=edj52w"></iframe>
                     </div>
                     <div class="hiking-route-icons">
                         <div class="hiking-route-icon">
@@ -268,23 +270,31 @@
                 </div>
                 <div class="tourist-attraction-details">
                     <h3>Látnivalók</h3>
-                    <h2>Isten tenyere kilátó</h2>
+                    <div class="tourist-attraction-title">
+                        <button class="tourist-attraction-back"><img src="./images/Icon ionic-ios-arrow-back.svg"
+                                alt="vissza"></button>
+                        <h2>Isten tenyere kilátó</h2>
+                        <button class="tourist-attraction-next"><img src="./images/Icon ionic-ios-arrow-back (1).svg"
+                                alt="előre"></button>
+                    </div>
                     <p>A Hollókő és Felsőtold határán található Kéz Kilátó nagyszerű kirándulóhely.</p>
                     <p>Könnyen járható túra útvonalon lehet megközelíteni, festői szépségű panorámát nyújt, ameddig a
                         szem ellát.</p>
-                    <button><a href="#">Bővebben</a></button>
+                    <button class="transparent-black-button"><a href="#">BŐVEBBEN</a></button>
                 </div>
             </div>
-            <img src="./images/Icon ionic-ios-arrow-back (1).svg" alt="előre">
             <div class="tourist-attraction-selection mobile-only">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio" class="selected">
+                <button class="equipment-selection-button">‎</button>
+                <button class="equipment-selection-button">‎</button>
+                <button class="equipment-selection-button">‎</button>
+                <button class="equipment-selection-button selected">‎</button>
             </div>
         </section>
         <section id="our-valuable-places">
             <div class="our-valuable-place">
+                <div class="our-valuable-place-img">
+                    <img src="./images/20230928-dji_0041-hdr-scaled.jpg" alt="benczúr - kúria">
+                </div>
                 <div class="our-valuable-place-details">
                     <h3>Értékeink</h3>
                     <h2>Benczúr - kúria</h2>
@@ -298,55 +308,84 @@
                         és a kastélyt körülvevő idilli parkban el és pihenő terasz biztosít lehetőséget egy kis
                         szusszanásra, az ajándékboltban pedig szuvenírt is beszerezhettek.</p>
                 </div>
-                <div class="our-valuable-place-img">
-                    <img src="./images/20230928-dji_0041-hdr-scaled.jpg" alt="benczúr - kúria">
-                </div>
             </div>
         </section>
         <section id="faq">
             <h2>Gyakran Ismételt Kérdések</h2>
             <div class="questions">
                 <div class="question">
-                    <p>Hány éjszakára lehet foglalni?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
-                    <p class="answer">Válasz.</p>
+                    <div class="question-header">
+                        <p>Hány éjszakára lehet foglalni?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
+                    </div>
+                    <div class="answer">
+                        <p>Válasz.</p>
+                    </div>
                 </div>
                 <div class="question open">
-                    <p>Mikor tudjuk átvenni és meddig kell elhagynunk a szálláshelyet?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (3).svg" alt="zár">
-                    <p class="answer">Vendégházainkat a foglalás első napján délután 16:00 órától lehet elfoglalni,
-                        valamint az utolsó tartózkodási nap
-                        délelőtt 11:00 óráig kell elhagyni.</p>
+                    <div class="question-header">
+                        <p>Mikor tudjuk átvenni és meddig kell elhagynunk a szálláshelyet?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (3).svg" alt="zár">
+                    </div>
+                    <div class="answer">
+                        <p>Vendégházainkat a foglalás első napján délután 16:00 órától lehet elfoglalni,
+                            valamint az utolsó tartózkodási nap
+                            délelőtt 11:00 óráig kell elhagyni.</p>
+                    </div>
                 </div>
                 <div class="question">
-                    <p>Hogyan tudunk fizetni?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
-                    <p class="answer">Válasz.</p>
+                    <div class="question-header">
+                        <p>Hogyan tudunk fizetni?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
+                    </div>
+                    <div class="answer">
+                        <p>Válasz.</p>
+                    </div>
                 </div>
                 <div class="question">
-                    <p>Mennyibe kerül egy éjszaka és mit foglal magába az ár?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
-                    <p class="answer">Válasz.</p>
+                    <div class="question-header">
+                        <p>Mennyibe kerül egy éjszaka és mit foglal magába az ár?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
+                    </div>
+                    <div class="answer">
+                        <p>Válasz.</p>
+                    </div>
                 </div>
                 <div class="question">
-                    <p>Milyen felszereltsége van a házaknak?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
-                    <p class="answer">Válasz.</p>
+                    <div class="question-header">
+                        <p>Milyen felszereltsége van a házaknak?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
+                    </div>
+                    <div class="answer">
+                        <p>Válasz.</p>
+                    </div>
                 </div>
                 <div class="question">
-                    <p>Vannak szomszédok?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
-                    <p class="answer">Válasz.</p>
+                    <div class="question-header">
+                        <p>Vannak szomszédok?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
+                    </div>
+                    <div class="answer">
+                        <p>Válasz.</p>
+                    </div>
                 </div>
                 <div class="question">
-                    <p>Reggelit tudunk kérni?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
-                    <p class="answer">Válasz.</p>
+                    <div class="question-header">
+                        <p>Reggelit tudunk kérni?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
+                    </div>
+                    <div class="answer">
+                        <p>Válasz.</p>
+                    </div>
                 </div>
                 <div class="question">
-                    <p>Háziállatot vihetünk?</p>
-                    <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
-                    <p class="answer">Válasz.</p>
+                    <div class="question-header">
+                        <p>Háziállatot vihetünk?</p>
+                        <img src="./images/Icon ionic-ios-arrow-back (2).svg" alt="nyit">
+                    </div>
+                    <div class="answer">
+                        <p>Válasz.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -356,16 +395,19 @@
             <img src="./images/fekvő.png" alt="Elizabeth Cottage Benczúrfalva">
         </div>
         <div class="footer-links">
-            <a href="#">Vendégházaink</a>
-            <a href="#">Áraink</a>
-            <a href="#">Felszereltség</a>
-            <a href="#">Túrák</a>
-            <a href="#">Látnivalók</a>
-            <a href="#">Galéria</a>
+            <a href="#">VENDÉGHÁZAINK</a>
+            <a href="#">ÁRAINK</a>
+            <a href="#">FELSZERELTSÉG</a>
+            <a href="#">TÚRÁK</a>
+            <a href="#">LÁTNIVALÓK</a>
+            <a href="#">GALÉRIA</a>
             <a href="#">GYIK</a>
+        </div>
+        <div class="footer-social">
             <a href="https://www.facebook.com" target="_blank"><img src="./images/Icon metro-facebook.svg"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="./images/Icon simple-instagram.svg"></a>
         </div>
+
         <div class="contact-infos">
             <div class="contact-info mobile-only">
                 <img src="./images/phone-alt-solid.svg" alt="telefonszám">
@@ -382,7 +424,8 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <p>Copyright © 2024 Elizabeth Cottage. Minden jog fenntartva.</p>
+            <p>Copyright © 2024 Elizabeth Cottage.</p>
+            <p>Minden jog fenntartva.</p>
         </div>
     </footer>
     <script src="./scrips/bootstrap.js"></script>

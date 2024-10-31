@@ -13,6 +13,16 @@
   display: initial;
 }
 
+@media screen and (min-width: 768px) {
+  .desktop-only {
+    display: initial;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -96,6 +106,7 @@ nav {
 button {
   padding: 10px 30px;
   border-radius: 20px 0 20px 0;
+  width: max-content;
 }
 
 .green-button {
@@ -106,13 +117,21 @@ button {
   background-color: #ab3c20;
 }
 
-.transparent-button {
+.transparent-black-button {
   border: 1px solid black;
+}
+
+.transparent-black-button a {
+  color: black;
+}
+
+.transparent-white-button {
+  border: 1px solid white;
   background-color: transparent;
 }
 
-.transparent-button a {
-  color: black;
+.transparent-white-button a {
+  color: white;
 }
 
 #main-section {
@@ -159,6 +178,8 @@ p {
 #about-us h2 {
   color: white;
   padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #map {
@@ -294,7 +315,7 @@ p {
 
 .gallery-images {
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .gallery-images img {
@@ -424,15 +445,31 @@ p {
 }
 
 .hiking-route-map {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  height: 200px;
+  width: 100%;
 }
 
 .hiking-route-map iframe {
+  position: relative;
+  right: 0;
+  top: -43px;
+  width: calc(100% + 16px);
+  height: calc(100% + 43px);
+  border: 0;
   overflow: hidden;
-  width: 100%;
-  height: calc(100% - 4px);
+}
+
+.recharts-responsive-container,
+.recharts-wrapper,
+.recharts-surface {
+  width: 20px !important;
+  height: 20px !important;
 }
 
 .hiking-route-icons {
@@ -440,7 +477,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 10px;
   border-radius: 12px;
   margin-bottom: 30px;
 }
@@ -448,33 +484,46 @@ p {
 .hiking-route-icon {
   text-wrap: nowrap;
   height: 48px;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .hiking-route-icon p {
   margin-bottom: 0;
 }
 
-.hiking-route-icons > *:not(:first-child) {
+.hiking-route-icons>*:not(:first-child) {
   border-left: 1px solid black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 300px) {
   .hiking-route-icons {
-    padding: 15px 10px;
+    padding: 30px 10px;
   }
 
-  .hiking-route-icon {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-}
-
-@media screen and (max-width: 400px) {
   .hiking-route-icon {
     padding-left: 1%;
     padding-right: 1%;
+  }
+
+  @media screen and (min-width: 400px) {
+    .hiking-route-icons {
+      padding: 30px 10px;
+    }
+
+    .hiking-route-icon {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .hiking-route-icons {
+      padding: 30px 10px;
+    }
+
+    .hiking-route-icon {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 }
 
@@ -507,20 +556,186 @@ p {
   padding: 30px;
 }
 
-.tourist-attraction-details h2, h3, p{
-    text-align: center;
+.tourist-attraction-details {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tourist-attraction-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tourist-attraction-title h2 {
+  margin-bottom: 0;
+  text-wrap: nowrap;
+}
+
+.tourist-attraction-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.tourist-attraction-selection-button {
+  background-color: white;
+  padding: 1px 13px;
+  border-radius: 16px;
+}
+
+.tourist-attraction-selection .selected {
+  background-color: black;
+}
+
+.tourist-attraction-details h2,
+h3,
+p {
+  text-align: center;
 }
 
 .tourist-attraction-details p {
   color: black;
 }
 
-@media screen and (min-width: 768px) {
-  .desktop-only {
-    display: initial;
-  }
+#our-valuable-places {
+  padding: 30px;
+}
 
-  .mobile-only {
-    display: none;
-  }
+.our-valuable-place-details {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.our-valuable-place-details p {
+  color: black;
+}
+
+.our-valuable-place-details h2 {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.our-valuable-place-img img {
+  aspect-ratio: 1.07;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 335px 335px 0 0;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#faq {
+  background-color: #f0f7f4;
+  padding: 30px;
+}
+
+#faq h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.question {
+  padding-bottom: 10px;
+}
+
+.question-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.question p {
+  color: black;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.answer {
+  display: none;
+}
+
+.open .question-header{
+  background-color: #68B190;
+}
+
+.open .question-header p {
+  color: white;
+}
+
+.open .answer {
+  display: initial;
+}
+
+.answer p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 50%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-links a {
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 30px;
+}
+
+.contact-infos {
+  background-color: #AB3C20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-info img {
+  max-height: 19px;
+  max-width: 19px;
+}
+
+.footer-copyright {
+  padding-top: 30px;
+}
+
+.footer-copyright p {
+  margin-bottom: 0;
 }
