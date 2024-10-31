@@ -5,24 +5,6 @@
     url("../fonts/swDisplayItalic700.woff2") format("woff2");
 }
 
-.desktop-only {
-  display: none;
-}
-
-.mobile-only {
-  display: initial;
-}
-
-@media screen and (min-width: 768px) {
-  .desktop-only {
-    display: initial;
-  }
-
-  .mobile-only {
-    display: none;
-  }
-}
-
 button {
   border: none;
   background-color: transparent;
@@ -51,7 +33,13 @@ h3 {
 }
 
 h1 {
-  font-size: 39px;
+  font-size: 33px;
+}
+
+@media screen and (min-width: 423px) {
+  h1 {
+    font-size: 39px;
+  }
 }
 
 h3 {
@@ -328,6 +316,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 #equipment h2 {
@@ -342,7 +331,7 @@ p {
   align-items: center;
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 95px;
 }
 
 .equipment-cards-previous,
@@ -362,6 +351,50 @@ p {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  #equipment h2 {
+    padding-top: 40px;
+    font-size: 45px;
+  }
+
+  .equipment-cards {
+    position: initial;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+  }
+
+  .equipment-cards-container {
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #equipment h2 {
+    padding-top: 40px;
+    font-size: 45px;
+  }
+
+  .equipment-cards {
+    position: initial;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+  }
+
+  .equipment-cards-container {
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
 .equipment-cards img {
   padding-bottom: 12px;
 }
@@ -371,7 +404,6 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -429,15 +461,30 @@ p {
 
 .hiking-tour-title h2 {
   position: absolute;
-  left: calc(50% - 140px);
+  left: calc(50% - 110px);
   margin-bottom: 0;
   text-wrap: nowrap;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 370px) {
+  .hiking-tour-title h2 {
+    font-size: 2rem;
+    left: calc(50% - 140px);
+  }
 }
 
 .hiking-tour-details {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
+}
+
+@media screen and (min-width: 370px) {
+  .hiking-tour-details {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .hiking-tour-details p {
@@ -463,13 +510,6 @@ p {
   height: calc(100% + 43px);
   border: 0;
   overflow: hidden;
-}
-
-.recharts-responsive-container,
-.recharts-wrapper,
-.recharts-surface {
-  width: 20px !important;
-  height: 20px !important;
 }
 
 .hiking-route-icons {
@@ -528,7 +568,7 @@ p {
 }
 
 .hiking-tour-selection {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -551,6 +591,18 @@ p {
   padding-top: 20px;
 }
 
+#tourist-attractions h2 {
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 423px) {
+  #tourist-attractions h2 {
+    font-size: 2rem;
+  }
+}
+
 .tourist-attraction-img img {
   border-radius: 0 100px 0 0;
   padding: 30px;
@@ -568,16 +620,16 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .tourist-attraction-title h2 {
   margin-bottom: 0;
+  padding-bottom: 0 !important;
   text-wrap: nowrap;
 }
 
 .tourist-attraction-selection {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -664,7 +716,7 @@ p {
   display: none;
 }
 
-.open .question-header{
+.open .question-header {
   background-color: #68B190;
 }
 
@@ -738,4 +790,22 @@ footer {
 
 .footer-copyright p {
   margin-bottom: 0;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: initial;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-only {
+    display: initial;
+  }
+
+  .mobile-only {
+    display: none;
+  }
 }
