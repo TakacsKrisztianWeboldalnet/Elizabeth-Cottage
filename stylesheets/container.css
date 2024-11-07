@@ -1,0 +1,201 @@
+/*Container pótló*/
+@media screen and (min-width: 768px) {
+  #main-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-top: 106px;
+  }
+
+  #main-section p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #main-section button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #main-section p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  #about-us p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #prices {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main-section p {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  #about-us p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  #prices {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #main-section p {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  #about-us p {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  #prices {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  nav {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #main-section p {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+
+  #about-us p {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  #prices {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  nav {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #main-section p {
+    padding-left: 600px;
+    padding-right: 600px;
+  }
+
+  #about-us p {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+
+  #prices {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  nav {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  /*
+  #main-section, #aout-us, #map, #guszti-house-details, #orzsi-house-details, #prices, #gallery, #equipment, #hiking-tours, #tourist-attractions, #our-valuable-places, #faq {
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+  */
+}
+
+@media screen and (min-width: 620px) {
+  .map-first {
+    left: 50px;
+  }
+
+  .map-second {
+    right: 120px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .map-first {
+    left: 100px;
+  }
+
+  .map-second {
+    right: 220px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .map-first {
+    left: 200px;
+  }
+
+  .map-second {
+    top: 15%;
+    right: 320px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .map-first {
+    left: 300px;
+  }
+
+  .map-second {
+    right: 420px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .map-first {
+    left: 400px;
+  }
+
+  .map-second {
+    right: 520px;
+  }
+}

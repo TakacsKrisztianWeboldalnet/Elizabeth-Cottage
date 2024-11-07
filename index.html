@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/bootstrap.css">
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/container.css">
     <title>Elizabeth Cottage</title>
 </head>
 
@@ -22,13 +23,13 @@
                 <div class="menu">
                     <a href="#">VENDÉGHÁZAINK</a>
                     <a href="#">ÁRAINK</a>
-                    <a class="desktop-only" href="#">FELSZERELTSÉG</a>
-                    <a class="desktop-only" href="#">TÚRÁK</a>
-                    <a class="desktop-only" href="#">LÁTNIVALÓK</a>
-                    <a class="desktop-only" href="#">GALÉRIA</a>
-                    <a class="desktop-only" href="#">GYIK</a>
-                    <button class="desktop-only"><a href="#">FOGLALÁS</a></button>
-                    <button class="mobile-only"><img class="sidebar-toggle" src="./images/bars-solid.svg"></button>
+                    <a class="desktop-only-menu" href="#">FELSZERELTSÉG</a>
+                    <a class="desktop-only-menu" href="#">TÚRÁK</a>
+                    <a class="desktop-only-menu" href="#">LÁTNIVALÓK</a>
+                    <a class="desktop-only-menu" href="#">GALÉRIA</a>
+                    <a class="desktop-only-menu" href="#">GYIK</a>
+                    <button class="brown-button desktop-only"><a href="#">FOGLALÁS</a></button>
+                    <button class="mobile-only-menu"><img class="sidebar-toggle" src="./images/bars-solid.svg"></button>
                 </div>
             </nav>
         </header>
@@ -43,7 +44,7 @@
                 beszélgetni…akkor megérkeztél.</p>
             <p>Szeretettel várunk!</p>
             <button class="green-button"><a href="#">TÖBBET SZERETNÉK TUDNI</a></button>
-            <br>
+            <br class="mobile-only">
             <button class="transparent-white-button"><a href="#">FOGLALOK</a></button>
         </section>
         <section id="about-us">
@@ -115,7 +116,8 @@
         </section>
         <section id="prices">
             <h2>Áraink</h2>
-            <p>Az Örzsi Házat és a Guszti Házat egyszerre és külön-külön is foglalhatjátok. Egyidejű foglalás esetén a
+            <p class="prices-description">Az Örzsi Házat és a Guszti Házat egyszerre és külön-külön is foglalhatjátok.
+                Egyidejű foglalás esetén a
                 két Házban 10
                 felnőtt és 4 gyermek részére tudunk szállást biztosítani. A szobák nem pótágyazhatóak és a bennük lévő
                 franciaágyak nem

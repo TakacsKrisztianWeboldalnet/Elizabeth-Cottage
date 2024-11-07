@@ -57,7 +57,7 @@ header {
   top: 0;
   width: 100%;
   background-color: black;
-  z-index: 1;
+  z-index: 10;
 }
 
 nav {
@@ -75,6 +75,13 @@ nav {
   height: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .home {
+    width: auto;
+    height: auto;
+  }
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -82,8 +89,22 @@ nav {
   gap: 25px;
 }
 
-.menu button {
-  padding: 0;
+.desktop-only-menu {
+  display: none;
+}
+
+.mobile-only-menu {
+  display: initial;
+}
+
+@media screen and (min-width: 1080px) {
+  .desktop-only-menu {
+    display: initial;
+  }
+
+  .mobile-only-menu {
+    display: none;
+  }
 }
 
 .sidebar-toggle {
@@ -135,6 +156,160 @@ button {
   text-align: center;
 }
 
+/*Container pótló*/
+@media screen and (min-width: 768px) {
+  #main-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-top: 106px;
+  }
+
+  #main-section p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #main-section button {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #prices {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #main-section p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  #about-us p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #prices {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main-section p {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  #about-us p {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  #prices {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #main-section p {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  #about-us p {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  #prices {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  nav {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #main-section p {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+
+  #about-us p {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  #prices {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+
+  nav {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #main-section p {
+    padding-left: 600px;
+    padding-right: 600px;
+  }
+
+  #about-us p {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+
+  #prices {
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+
+  .hiking-tours-intro {
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+
+  nav {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
 #main-section h1,
 p {
   color: white;
@@ -163,6 +338,13 @@ p {
   padding-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  #about-us {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 #about-us h2 {
   color: white;
   padding-bottom: 15px;
@@ -174,6 +356,13 @@ p {
   position: relative;
   padding-top: 20px;
   padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map img {
+  position: relative;
 }
 
 #map a {
@@ -184,13 +373,15 @@ p {
 .map-first {
   position: absolute;
   bottom: 46%;
-  left: 20px;
+  left: 30px;
+  z-index: 1;
 }
 
 .map-second {
   position: absolute;
-  top: 11%;
-  right: 20px;
+  top: 13%;
+  right: 80px;
+  z-index: 1;
 }
 
 #guszti-house-details {
@@ -530,7 +721,7 @@ p {
   margin-bottom: 0;
 }
 
-.hiking-route-icons>*:not(:first-child) {
+.hiking-route-icons > *:not(:first-child) {
   border-left: 1px solid black;
 }
 
@@ -717,7 +908,7 @@ p {
 }
 
 .open .question-header {
-  background-color: #68B190;
+  background-color: #68b190;
 }
 
 .open .question-header p {
@@ -766,7 +957,7 @@ footer {
 }
 
 .contact-infos {
-  background-color: #AB3C20;
+  background-color: #ab3c20;
   display: flex;
   flex-direction: column;
   gap: 10px;
