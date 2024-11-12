@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/bootstrap.css">
     <link rel="stylesheet" href="./stylesheets/style.css">
-    <link rel="stylesheet" href="./stylesheets/container.css">
+    <link rel="stylesheet" href="./stylesheets/secondary.css">
     <title>Elizabeth Cottage</title>
 </head>
 
@@ -70,13 +70,19 @@
                     szobái a földszinten és az emeleten találhatóak, melyek mindegyike tágas, kényelmes, légkondicionált
                     szoba.</p>
                 <h4>SZOBATÍPUSOK:</h4>
-                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
-                <p>Földszint: 2 db Franciaágyas szobák saját fürdőszobával</p>
-                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
-                <p>Emelet: 1 db Franciaágyas szoba fürdőszoba nélkül.</p>
-                <p>1 db Családi szoba saját fürdőszobával. Ebben a nagy légterű szobában egy franciaágy és 2 db
+                <div class="flower-list">
+                    <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                    <p>Földszint: 2 db Franciaágyas szobák saját fürdőszobával</p>
+                </div>
+                <div class="flower-list">
+                    <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                    <p>Emelet: 1 db Franciaágyas szoba fürdőszoba nélkül.</p>
+                </div>
+                <p class="flower-list-secondary">1 db Családi szoba saját fürdőszobával. Ebben a nagy légterű szobában
+                    egy franciaágy és 2 db
                     szimpla ágy található.</p>
                 <p>A szobákhoz közös étkező és igényesen kialakított, jól felszerelt konyha tartozik.</p>
+                <button class="green-button desktop-only"><a href="#">FOGLALÁS</a></button>
             </div>
             <div class="guszti-house-details-img">
                 <img class="desktop-only" src="./images/slider-5053.jpg" alt="Guszti Ház">
@@ -85,12 +91,18 @@
                     <p>Elsősorban nagycsaládoknak, baráti társaságoknak. Foglalására minimum 2 szoba és 2 éjszaka
                         foglalása esetén van lehetőség.</p>
                 </div>
-                <button class="green-button"><a href="#">FOGLALÁS</a></button>
+                <button class="green-button mobile-only"><a href="#">FOGLALÁS</a></button>
             </div>
         </section>
         <section id="orzsi-house-details">
             <div class="orzsi-house-details-img">
-                <img class="desktop-only" src="./images/slider-5053.jpg" alt="Örzsi Ház">
+                <img class="desktop-only" src="./images/article-image-palocfold-a-tuzben-szuletett-taj-13.jpg"
+                    alt="Örzsi Ház">
+                <div class="who-is-it-for desktop-only">
+                    <h4>KIKNEK AJÁNLJUK?</h4>
+                    <p>Elsősorban pároknak, kisgyermekes családoknak. Foglalására minimum 2 éjszaka foglalása esetén van
+                        lehetőség.</p>
+                </div>
             </div>
             <div class="orzsi-house-details-text">
                 <h3 class="desktop-only">Vendégházaink</h3>
@@ -101,12 +113,16 @@
                     megnöveltük. Az eredeti konyha és kamra helyén tágas nappalit és jól felszerelt étkező-konyhát
                     alakítottunk ki.</p>
                 <h4>SZOBATÍPUSOK:</h4>
-                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
-                <p>1 db Családi szoba saját fürdőszobával.</p>
-                <img src="./images/Icon ionic-md-flower.svg" alt="virág">
-                <p>Ebben a nagy légterű szobában egy franciaágy és egy kinyitható kanapéágy található. Ebből a
-                    szobatípusból 1 db található a házban.</p>
-                <div class="who-is-it-for">
+                <div class="flower-list">
+                    <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                    <p>1 db Családi szoba saját fürdőszobával.</p>
+                </div>
+                <div class="flower-list">
+                    <img src="./images/Icon ionic-md-flower.svg" alt="virág">
+                    <p>Ebben a nagy légterű szobában egy franciaágy és egy kinyitható kanapéágy található. Ebből a
+                        szobatípusból 1 db található a házban.</p>
+                </div>
+                <div class="who-is-it-for mobile-only">
                     <h4>KIKNEK AJÁNLJUK?</h4>
                     <p>Elsősorban pároknak, kisgyermekes családoknak. Foglalására minimum 2 éjszaka foglalása esetén van
                         lehetőség.</p>
@@ -136,12 +152,16 @@
         <section id="gallery">
             <h2>Galéria</h2>
             <div class="gallery-images">
-                <img src="./images/galéria1.jpg" alt="padlástér berendezve">
-                <img src="./images/galéria2.jpg" alt="szoba berendezve">
-                <img src="./images/galéria3.jpg" alt="ház kívülről">
-                <img src="./images/galéria4.jpg" alt="kerti borozás">
-                <img src="./images/galéria5.jpg" alt="kinézés az ablakon, egy házat látva">
-                <img src="./images/galéria6.jpg" alt="kanapé, és mellette egy asztal lámpával és virággal">
+                <div class="row">
+                    <img class="col-12 col-md-6 col-lg-4" src="./images/galéria1.jpg" alt="padlástér berendezve">
+                    <img class="col-12 col-md-6 col-lg-4" src="./images/galéria2.jpg" alt="szoba berendezve">
+                    <img class="col-12 col-md-6 col-lg-4" src="./images/galéria3.jpg" alt="ház kívülről">
+                    <img class="col-12 col-md-6 col-lg-4" src="./images/galéria4.jpg" alt="kerti borozás">
+                    <img class="col-12 col-md-6 col-lg-4" src="./images/galéria5.jpg"
+                        alt="kinézés az ablakon, egy házat látva">
+                    <img class="col-12 col-md-6 col-lg-4" src="./images/galéria6.jpg"
+                        alt="kanapé, és mellette egy asztal lámpával és virággal">
+                </div>
             </div>
             <button class="brown-button"><a href="#">TOVÁBBI KÉPEK</a></button>
         </section>
@@ -171,7 +191,6 @@
                         <img src="./images/Group 369.svg" alt="kozmetikumok">
                         <p>Organikus, gyógynövény alapú fürdőszobai kozmetikumok,</p>
                     </div>
-                    <!--Ide kéne sortörés 768px felett.-->
                     <div class="equipment-card desktop-only">
                         <img src="./images/Group 374.svg" alt="wi-fi">
                         <p>Wi-fi, Streaming csatorna (Netflix)</p>
@@ -215,51 +234,57 @@
                     túrakerékpárral érinthetik a környék legszebb magaslatait.</p>
             </div>
             <div class="hiking-tour">
-                <div class="hiking-tour-image">
-                    <img src="./images/mountain-landscape-with-sunny-sky-natural-outdoor-travel-background-slovakia-low-tatras_527096-18273.jpeg"
-                        alt="egy férfi túrázik">
-                </div>
-                <div class="hiking-tour-title">
-                    <button class="hiking-tour-back"><img src="./images/Icon ionic-ios-arrow-back.svg"
-                            alt="vissza"></button>
-                    <h2>Palóc Grand Canyon</h2>
-                    <button class="hiking-tour-next"><img src="./images/Icon ionic-ios-arrow-back (1).svg"
-                            alt="előre"></button>
-                </div>
-                <div class="hiking-tour-details">
-                    <p>Egy varázslatosi szurdokvölgy meredek, néhol különlegesen ívelt, a sárga és barna kőzetek
-                        változatos játékával.</p>
-                    <p>A 15-20 méter mélyen és nagyjából 400 méter hosszan bevágódott, rendkívül látványos kis
-                        szoros
-                        csodás
-                        látnivaló.</p>
-                    <button class="transparent-black-button"><a href="#">BŐVEBBEN</a></button>
-                    <div class="hiking-route-map">
-                        <iframe
-                            src="https://www.alltrails.com/widget/map/benczuron66-81ca026?elevationDiagram=false&amp;u=m&amp;sh=edj52w"></iframe>
+                <div class="hiking-tour-right">
+                    <div class="hiking-tour-image">
+                        <img src="./images/mountain-landscape-with-sunny-sky-natural-outdoor-travel-background-slovakia-low-tatras_527096-18273.jpeg"
+                            alt="egy férfi túrázik">
                     </div>
-                    <div class="hiking-route-icons">
-                        <div class="hiking-route-icon">
-                            <img src="./images/Path 73.png" alt="hossz">
-                            <p>66 km</p>
+                </div>
+                <div class="hiking-tour-left">
+                    <div class="hiking-tour-title">
+                        <button class="hiking-tour-back"><img src="./images/Icon ionic-ios-arrow-back.svg"
+                                alt="vissza"></button>
+                        <h2>Palóc Grand Canyon</h2>
+                        <button class="hiking-tour-next"><img src="./images/Icon ionic-ios-arrow-back (1).svg"
+                                alt="előre"></button>
+                    </div>
+                    <div class="hiking-tour-details">
+                        <p>Egy varázslatosi szurdokvölgy meredek, néhol különlegesen ívelt, a sárga és barna kőzetek
+                            változatos játékával.</p>
+                        <p>A 15-20 méter mélyen és nagyjából 400 méter hosszan bevágódott, rendkívül látványos kis
+                            szoros
+                            csodás
+                            látnivaló.</p>
+                        <button class="transparent-black-button"><a href="#">BŐVEBBEN</a></button>
+                        <div class="hiking-route-map">
+                            <iframe
+                                src="https://www.alltrails.com/widget/map/benczuron66-81ca026?elevationDiagram=false&amp;u=m&amp;sh=edj52w"></iframe>
                         </div>
-                        <div class="hiking-route-icon">
-                            <img src="./images/Rise_2_.svg" alt="szintkülömbség">
-                            <p>750 m</p>
-                        </div>
-                        <div class="hiking-route-icon">
-                            <img src="./images/Path 65.svg" alt="gyalog">
-                            <img src="./images/Group 320.svg" alt="biciklivel">
-                        </div>
-                        <div class="hiking-route-icon">
-                            <img src="./images/Group 321.svg" alt="csoportban">
-                            <img src="./images/Group 326.svg" alt="egyedül">
+                        <div class="hiking-route-icons">
+                            <div class="hiking-route-icon">
+                                <img src="./images/Path 73.png" alt="hossz">
+                                <p>66 km</p>
+                            </div>
+                            <div class="hiking-route-icon">
+                                <img src="./images/Rise_2_.svg" alt="szintkülömbség">
+                                <p>750 m</p>
+                            </div>
+                            <div class="hiking-route-icon">
+                                <img src="./images/Path 65.svg" alt="gyalog">
+                                <img src="./images/Group 320.svg" alt="biciklivel">
+                            </div>
+                            <div class="hiking-route-icon">
+                                <img src="./images/Group 321.svg" alt="csoportban">
+                                <img src="./images/Group 326.svg" alt="egyedül">
+                            </div>
                         </div>
                     </div>
-                    <button class="green-button"><a href="#">TÚRAÚTVONAL LETÖLTÉSE</a></button>
                 </div>
             </div>
-            <div class="hiking-tour-selection mobile-only">
+            <div class="hiking-download">
+                <button class="green-button"><a href="#">TÚRAÚTVONAL LETÖLTÉSE</a></button>
+            </div>
+            <div class="hiking-tour-selection">
                 <button class="hiking-tour-selection-button">‎</button>
                 <button class="hiking-tour-selection-button">‎</button>
                 <button class="hiking-tour-selection-button">‎</button>
@@ -286,7 +311,7 @@
                     <button class="transparent-black-button"><a href="#">BŐVEBBEN</a></button>
                 </div>
             </div>
-            <div class="tourist-attraction-selection mobile-only">
+            <div class="tourist-attraction-selection">
                 <button class="equipment-selection-button">‎</button>
                 <button class="equipment-selection-button">‎</button>
                 <button class="equipment-selection-button">‎</button>

@@ -178,11 +178,6 @@ button {
     margin-left: 100px;
     margin-right: 100px;
   }
-
-  .hiking-tours-intro {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -197,11 +192,6 @@ button {
   }
 
   #prices {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-
-  .hiking-tours-intro {
     margin-left: 200px;
     margin-right: 200px;
   }
@@ -222,11 +212,6 @@ button {
     margin-left: 300px;
     margin-right: 300px;
   }
-
-  .hiking-tours-intro {
-    margin-left: 300px;
-    margin-right: 300px;
-  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -241,11 +226,6 @@ button {
   }
 
   #prices {
-    margin-left: 400px;
-    margin-right: 400px;
-  }
-
-  .hiking-tours-intro {
     margin-left: 400px;
     margin-right: 400px;
   }
@@ -272,11 +252,6 @@ button {
     margin-right: 500px;
   }
 
-  .hiking-tours-intro {
-    margin-left: 500px;
-    margin-right: 500px;
-  }
-
   nav {
     padding-left: 200px;
     padding-right: 200px;
@@ -295,11 +270,6 @@ button {
   }
 
   #prices {
-    margin-left: 600px;
-    margin-right: 600px;
-  }
-
-  .hiking-tours-intro {
     margin-left: 600px;
     margin-right: 600px;
   }
@@ -384,6 +354,13 @@ p {
   z-index: 1;
 }
 
+@media screen and (min-width: 1200px) {
+  #map a {
+    font-family: SwDisplay, sans-serif;
+    font-size: 34px;
+  }
+}
+
 #guszti-house-details {
   background-color: #f0f7f4;
   text-align: center;
@@ -424,6 +401,68 @@ p {
   color: white !important;
 }
 
+@media screen and (min-width: 768px) {
+  #guszti-house-details {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .guszti-house-details-text {
+    flex-basis: 100%;
+    text-align: left;
+    padding-right: 50px;
+  }
+
+  .guszti-house-details-img {
+    flex-basis: 100%;
+    position: relative;
+  }
+
+  .guszti-house-details-img img {
+    border-radius: 16px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .guszti-house-details-img .who-is-it-for {
+    position: absolute;
+    width: 100%;
+    bottom: -190px;
+  }
+
+  .guszti-house-details-text h2 {
+    padding-bottom: 40px;
+  }
+
+  .guszti-house-details-text p {
+    margin-bottom: 30px;
+  }
+
+  .guszti-house-details-text a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .guszti-house-details-img .who-is-it-for {
+    position: absolute;
+    width: 70%;
+    bottom: -80px;
+    right: -50px;
+  }
+
+  #guszti-house-details {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .guszti-house-details-img .who-is-it-for {
+    width: 55%;
+  }
+}
+
 #orzsi-house-details {
   text-align: center;
   padding-top: 30px;
@@ -444,6 +483,114 @@ p {
   font-size: 14px;
   font-family: poppins, sans-serif;
   font-weight: 900;
+}
+
+.orzsi-house-details-text {
+  position: relative;
+}
+
+.orzsi-house-details-text .green-button {
+  margin-top: 260px;
+}
+
+.orzsi-house-details-text .who-is-it-for {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+
+@media screen and (min-width: 341px) {
+  .orzsi-house-details-text .green-button {
+    margin-top: 240px;
+  }
+}
+
+@media screen and (min-width: 399px) {
+  .orzsi-house-details-text .green-button {
+    margin-top: 220px;
+  }
+}
+
+@media screen and (min-width: 558px) {
+  .orzsi-house-details-text .green-button {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #orzsi-house-details {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .orzsi-house-details-img {
+    flex-basis: 100%;
+    position: relative;
+  }
+
+  .orzsi-house-details-img .who-is-it-for {
+    position: absolute;
+    width: 70%;
+    bottom: -50px;
+    left: -20px;
+    border-radius: 20px 0 20px 20px;
+  }
+
+  .orzsi-house-details-img img {
+    border-radius: 16px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .orzsi-house-details-text {
+    flex-basis: 100%;
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  .orzsi-house-details-text .green-button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .orzsi-house-details-img .who-is-it-for {
+    position: absolute;
+    width: 70%;
+    bottom: -80px;
+    left: -50px;
+  }
+
+  .orzsi-house-details-text {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .orzsi-house-details-img .who-is-it-for {
+    position: absolute;
+    width: 50%;
+    bottom: -80px;
+    right: -50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flower-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+
+  .flower-list p {
+    margin-bottom: 0;
+  }
+
+  .flower-list-secondary {
+    padding-left: 45px;
+  }
 }
 
 #prices {
@@ -484,6 +631,20 @@ p {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  #prices h4 {
+    font-size: 34px;
+  }
+
+  #prices h2 {
+    padding-bottom: 30px;
+  }
+
+  .available-house {
+    padding: 30px 40px;
+  }
+}
+
 #gallery {
   text-align: center;
   padding-top: 40px;
@@ -499,6 +660,17 @@ p {
 
 .gallery-images img {
   margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-images img {
+    border-radius: 28px;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
 }
 
 #equipment {
@@ -617,8 +789,6 @@ p {
   padding-right: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
   border-radius: 12px;
 }
 
@@ -655,12 +825,10 @@ p {
   left: calc(50% - 110px);
   margin-bottom: 0;
   text-wrap: nowrap;
-  font-size: 25px;
 }
 
 @media screen and (min-width: 370px) {
   .hiking-tour-title h2 {
-    font-size: 2rem;
     left: calc(50% - 140px);
   }
 }
@@ -734,32 +902,55 @@ p {
     padding-left: 1%;
     padding-right: 1%;
   }
+}
 
-  @media screen and (min-width: 400px) {
-    .hiking-route-icons {
-      padding: 30px 10px;
-    }
-
-    .hiking-route-icon {
-      padding-left: 2%;
-      padding-right: 2%;
-    }
+@media screen and (min-width: 400px) {
+  .hiking-route-icons {
+    padding: 30px 10px;
   }
 
-  @media screen and (min-width: 500px) {
-    .hiking-route-icons {
-      padding: 30px 10px;
-    }
+  .hiking-route-icon {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
 
-    .hiking-route-icon {
-      padding-left: 5%;
-      padding-right: 5%;
-    }
+@media screen and (min-width: 500px) {
+  .hiking-route-icons {
+    padding: 30px 10px;
+  }
+
+  .hiking-route-icon {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hiking-route-icons {
+    padding: 30px 0;
+  }
+
+  .hiking-route-icon {
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .hiking-route-icons {
+    padding: 30px 10px;
+  }
+
+  .hiking-route-icon {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
 .hiking-tour-selection {
-  display: flex !important;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -775,6 +966,91 @@ p {
 
 .hiking-tour-selection .selected {
   background-color: black;
+}
+
+#hiking-tours {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hiking-download {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hiking-tour-title {
+    position: initial;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .hiking-tour {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+    align-items: stretch;
+  }
+
+  .hiking-tour-title h2 {
+    position: initial;
+  }
+
+  .hiking-tour-details {
+    text-align: left;
+    margin: 0;
+  }
+
+  .hiking-tour-back {
+    position: absolute;
+    left: -10%;
+    top: 50%;
+  }
+
+  .hiking-tour-next {
+    position: absolute;
+    right: -10%;
+    top: 50%;
+  }
+
+  .hiking-tour-left {
+    flex-basis: 100%;
+  }
+
+  .hiking-tour-right {
+    flex-basis: 100%;
+    padding-right: 30px;
+  }
+
+  .hiking-tour-image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .hiking-tour-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #hiking-tours {
+    padding-bottom: 30px;
+  }
+
+  .hiking-route-icons {
+    margin-bottom: 0;
+  }
+
+  .hiking-tour-selection {
+    display: none;
+  }
+
+  .hiking-route-map {
+    height: 400px;
+  }
 }
 
 #tourist-attractions {
@@ -820,12 +1096,18 @@ p {
 }
 
 .tourist-attraction-selection {
-  display: flex !important;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .tourist-attraction-selection {
+    display: none;
+  }
 }
 
 .tourist-attraction-selection-button {
@@ -839,8 +1121,8 @@ p {
 }
 
 .tourist-attraction-details h2,
-h3,
-p {
+.tourist-attraction-details h3,
+.tourist-attraction-details p {
   text-align: center;
 }
 
@@ -981,22 +1263,4 @@ footer {
 
 .footer-copyright p {
   margin-bottom: 0;
-}
-
-.desktop-only {
-  display: none;
-}
-
-.mobile-only {
-  display: initial;
-}
-
-@media screen and (min-width: 768px) {
-  .desktop-only {
-    display: initial;
-  }
-
-  .mobile-only {
-    display: none;
-  }
 }
