@@ -69,6 +69,11 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  #tourist-attractions {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media screen and (min-width: 866px) {
@@ -120,6 +125,11 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  #tourist-attractions {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -161,6 +171,11 @@
   }
 
   #gallery {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  #tourist-attractions {
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -213,6 +228,11 @@
     padding-left: 150px;
     padding-right: 150px;
   }
+
+  #tourist-attractions {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -262,6 +282,11 @@
     padding-left: 200px;
     padding-right: 200px;
   }
+
+  #tourist-attractions {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 @media screen and (min-width: 1800px) {
@@ -308,6 +333,11 @@
   }
 
   #gallery {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  #tourist-attractions {
     padding-left: 250px;
     padding-right: 250px;
   }

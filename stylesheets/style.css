@@ -1061,13 +1061,6 @@ p {
 #tourist-attractions h2 {
   text-align: center;
   padding-bottom: 25px;
-  font-size: 20px;
-}
-
-@media screen and (min-width: 423px) {
-  #tourist-attractions h2 {
-    font-size: 2rem;
-  }
 }
 
 .tourist-attraction-img img {
@@ -1128,6 +1121,104 @@ p {
 
 .tourist-attraction-details p {
   color: black;
+}
+
+@media screen and (min-width: 768px) {
+  #tourist-attractions {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .tourist-attraction {
+    display: flex;
+  }
+
+  .tourist-attraction-img img {
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 70px;
+    border-radius: 0 200px 0 0;
+    height: 84%;
+    object-fit: cover;
+  }
+
+  .tourist-attraction-details {
+    background-color: white;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 80px;
+    margin-left: -20px;
+  }
+
+  .tourist-attraction-details h2,
+  .tourist-attraction-details h3,
+  .tourist-attraction-details p {
+    text-align: left;
+  }
+
+  .tourist-attraction-title {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .tourist-attraction-img img {
+    height: 86%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .tourist-attraction-back {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+  }
+
+  .tourist-attraction-next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .tourist-attraction-back {
+    position: absolute;
+    top: 50%;
+    left: 65px;
+  }
+
+  .tourist-attraction-next {
+    position: absolute;
+    top: 50%;
+    right: 65px;
+  }
+
+  .tourist-attraction-img img {
+    height: 87%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .tourist-attraction-back {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+  }
+
+  .tourist-attraction-next {
+    position: absolute;
+    top: 50%;
+    right: 110px;
+  }
+
+  .tourist-attraction-img img {
+    height: 88%;
+  }
 }
 
 #our-valuable-places {
