@@ -1172,13 +1172,14 @@ p {
   }
 
   .tourist-attraction-img {
-    flex-basis: 100%;
+    flex-basis: 80%;
     z-index: 2;
   }
 
   .tourist-attraction-img img {
     padding: 0;
     height: 80%;
+    width: 100%;
     border-radius: 0 200px 0 0;
     margin-top: 10%;
   }
@@ -1188,7 +1189,7 @@ p {
     margin-top: 150px;
     margin-bottom: 80px;
     border-radius: 0 20px 20px 0;
-    padding: 60px;
+    padding: 10px;
     flex-basis: 80%;
     z-index: 2;
   }
@@ -1224,8 +1225,22 @@ p {
   .tourist-attraction-background {
     position: absolute;
     background-color: white;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 60%;
+    margin-top: 150px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tourist-attraction-details {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .tourist-attraction-details {
+    padding: 50px;
   }
 }
 
@@ -1255,6 +1270,41 @@ p {
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-valuable-place {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .our-valuable-place-img {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .our-valuable-place-details {
+    flex-basis: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+
+  #our-valuable-places {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-valuable-place-details {
+    padding-right: 50px;
+  }
 }
 
 #faq {
@@ -1303,6 +1353,14 @@ p {
 .answer p {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .question {
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 footer {
@@ -1358,6 +1416,40 @@ footer {
 
 .footer-copyright p {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .footer-social {
+    padding: 0;
+  }
+
+  .desktop-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .contact-infos {
+    flex-direction: row;
+    padding: 12px;
+    gap: 50px;
+  }
+
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 
 .desktop-only {
