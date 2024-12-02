@@ -22,14 +22,15 @@
                         <img src="./images/favicon.png" alt="Elizabeth Cottage Benczúrfalva">
                     </div>
                     <div class="menu">
-                        <a href="#">VENDÉGHÁZAINK</a>
-                        <a href="#">ÁRAINK</a>
-                        <a class="desktop-only-menu" href="#">FELSZERELTSÉG</a>
-                        <a class="desktop-only-menu" href="#">TÚRÁK</a>
-                        <a class="desktop-only-menu" href="#">LÁTNIVALÓK</a>
-                        <a class="desktop-only-menu" href="#">GALÉRIA</a>
-                        <a class="desktop-only-menu" href="#">GYIK</a>
-                        <button class="brown-button desktop-only"><a href="#">FOGLALÁS</a></button>
+                        <a href="#guszti-house-details">VENDÉGHÁZAINK</a>
+                        <a href="#prices">ÁRAINK</a>
+                        <a class="desktop-only-menu" href="#equipment">FELSZERELTSÉG</a>
+                        <a class="desktop-only-menu" href="#hiking-tours">TÚRÁK</a>
+                        <a class="desktop-only-menu" href="#tourist-attractions">LÁTNIVALÓK</a>
+                        <a class="desktop-only-menu" href="#gallery">GALÉRIA</a>
+                        <a class="desktop-only-menu" href="#faq">GYIK</a>
+                        <button class="brown-button desktop-only"><a
+                                href="mailto:info@elizabethcottage.hu">FOGLALÁS</a></button>
                         <button class="mobile-only-menu"><img class="sidebar-toggle"
                                 src="./images/bars-solid.svg"></button>
                     </div>
@@ -52,9 +53,9 @@
                         beszélgetni…akkor megérkeztél.</p>
                     <p>Szeretettel várunk!</p>
                 </div>
-                <button class="green-button"><a href="#">TÖBBET SZERETNÉK TUDNI</a></button>
+                <button class="green-button"><a href="#guszti-house-details">TÖBBET SZERETNÉK TUDNI</a></button>
                 <br class="mobile-only">
-                <button class="transparent-white-button"><a href="#">FOGLALOK</a></button>
+                <button class="transparent-white-button"><a href="mailto:info@elizabethcottage.hu">FOGLALOK</a></button>
             </div>
         </section>
         <section id="about-us">
@@ -74,9 +75,9 @@
         </section>
         <section id="map">
             <div class="container">
-                <button class="green-button map-first"><a href="#">Örzsi Ház</a></button>
+                <button class="green-button map-first"><a href="#orzsi-house-details">Örzsi Ház</a></button>
                 <img src="./images/Örzsi_Ház_Guszti_Ház_1.png" alt="Örzsi Ház, Guszti Ház felülről">
-                <button class="green-button map-second"><a href="#">Guszti Ház</a></button>
+                <button class="green-button map-second"><a href="#guszti-house-details">Guszti Ház</a></button>
             </div>
         </section>
         <section id="guszti-house-details">
@@ -106,7 +107,7 @@
                             egy franciaágy és 2 db
                             szimpla ágy található.</p>
                         <p>A szobákhoz közös étkező és igényesen kialakított, jól felszerelt konyha tartozik.</p>
-                        <button class="green-button desktop-only"><a href="#">FOGLALÁS</a></button>
+                        <button class="green-button desktop-only"><a href="mailto:info@elizabethcottage.hu">FOGLALÁS</a></button>
                     </div>
                     <div class="guszti-house-details-img">
                         <img class="desktop-only" src="./images/slider-5053.jpg" alt="Guszti Ház">
@@ -164,7 +165,7 @@
                                 van
                                 lehetőség.</p>
                         </div>
-                        <button class="green-button"><a href="#">FOGLALÁS</a></button>
+                        <button class="green-button"><a href="mailto:info@elizabethcottage.hu">FOGLALÁS</a></button>
                     </div>
                 </div>
             </div>
@@ -208,9 +209,18 @@
                             alt="kinézés az ablakon, egy házat látva">
                         <img class="col-12 col-md-6 col-lg-4" src="./images/galéria6.jpg"
                             alt="kanapé, és mellette egy asztal lámpával és virággal">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da1_3645_1920x.jpg" alt="kerítés">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da1_7150_600x.jpg" alt="szoba franciággyal">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da1_7185_600x.jpg" alt="konyha és nappali">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da1_7207_600x.jpg" alt="étkező">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da1_9270-crop_1920x.jpeg" alt="szoba franciággyal">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da1_9279_600x.jpg" alt="konyha">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da1_9318_600x.jpg" alt="szoba franciaággyal">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da2_9260_600x.jpg" alt="konyha és étkező">
+                        <img class="col-12 col-md-6 col-lg-4 gallery-additional" src="./images/da2_9323_1920x.jpg" alt="egy csésze kávé">
                     </div>
                 </div>
-                <button class="brown-button"><a href="#">TOVÁBBI KÉPEK</a></button>
+                <button class="brown-button gallery-more"><a href="#">TOVÁBBI KÉPEK</a></button>
             </div>
         </section>
         <section id="equipment">
@@ -276,7 +286,8 @@
             <div class="container">
                 <div class="hiking-tours-intro">
                     <h2>Túráink</h2>
-                    <p>Vendégházaink az Északi Zöld és a Mária Út túra útvonalán találhatóak. A Házból kilépve
+                    <p>Vendégházaink az <span class="paragraph-link desktop-only">Északi Zöld</span> és a <span
+                            class="paragraph-link desktop-only">Mária Út</span> túra útvonalán találhatóak. A Házból kilépve
                         könnyed túrákat tehettek a
                         dimbes-dombos vidéken és gyönyörködhettek az elétek táruló panorámában. A hosszabb bakancsos
                         túrák
@@ -500,13 +511,13 @@
                         <img src="./images/fekvő.png" alt="Elizabeth Cottage Benczúrfalva">
                     </div>
                     <div class="footer-links">
-                        <a href="#">VENDÉGHÁZAINK</a>
-                        <a href="#">ÁRAINK</a>
-                        <a href="#">FELSZERELTSÉG</a>
-                        <a href="#">TÚRÁK</a>
-                        <a href="#">LÁTNIVALÓK</a>
-                        <a href="#">GALÉRIA</a>
-                        <a href="#">GYIK</a>
+                        <a href="#guszti-house-details">VENDÉGHÁZAINK</a>
+                        <a href="#prices">ÁRAINK</a>
+                        <a href="#equipment">FELSZERELTSÉG</a>
+                        <a href="#hiking-tours">TÚRÁK</a>
+                        <a href="#tourist-attractions">LÁTNIVALÓK</a>
+                        <a href="#gallery">GALÉRIA</a>
+                        <a href="#faq">GYIK</a>
                     </div>
                     <div class="footer-social">
                         <a href="https://www.facebook.com" target="_blank"><img
@@ -523,7 +534,7 @@
                     </div>
                     <div class="contact-info">
                         <img src="./images/Icon ionic-md-mail.svg" alt="email">
-                        <a href="mailto:info@elizabethcottage.hu">info@elizabethcottage.hu</a></a>
+                        <a href="mailto:info@elizabethcottage.hu">info@elizabethcottage.hu</a>
                     </div>
                     <div class="contact-info">
                         <img src="./images/Icon ionic-md-pin.svg" alt="helyszín">

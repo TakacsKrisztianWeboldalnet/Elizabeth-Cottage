@@ -663,6 +663,10 @@ p {
   margin-top: 15px;
 }
 
+.gallery-additional {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .gallery-images img {
     border-radius: 28px;
@@ -805,6 +809,11 @@ p {
     padding-left: 150px;
     padding-right: 150px;
   }
+}
+
+.paragraph-link {
+  color: #68B190;
+  text-decoration: underline;
 }
 
 .hiking-tour-image {
@@ -1101,6 +1110,7 @@ p {
 .tourist-attraction-img img {
   border-radius: 0 100px 0 0;
   padding: 30px;
+  padding-bottom: 0;
 }
 
 .tourist-attraction-details {
