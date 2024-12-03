@@ -1,3 +1,29 @@
+// Mobil oldalsáv
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebar = document.querySelector(".sidebar");
+  const toggleButton = document.querySelector(".sidebar-toggle");
+  const links = sidebar.querySelectorAll("a");
+
+  const closeSidebar = () => {
+    sidebar.classList.remove("open");
+  };
+
+  toggleButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    sidebar.classList.toggle("open");
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", closeSidebar);
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
+      closeSidebar();
+    }
+  });
+});
+
 //További képek
 document.addEventListener("DOMContentLoaded", function () {
   const galleryMoreButton = document.querySelector(".gallery-more");
@@ -14,7 +40,61 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//GYIK működése:
+//Felszereltség:
+document.addEventListener("DOMContentLoaded", () => {
+  const cardsContainer = document.querySelector(".equipment-cards");
+  const cards = Array.from(document.querySelectorAll(".equipment-card"));
+  const prevButton = document.querySelector(".equipment-cards-previous");
+  const nextButton = document.querySelector(".equipment-cards-next");
+  const selectionButtons = Array.from(
+    document.querySelectorAll(".equipment-selection-button")
+  );
+
+  const totalCards = cards.length;
+  const visibleCards = 2;
+  const totalSteps = Math.ceil(totalCards / visibleCards);
+  let currentStep = 0;
+
+  const updateCardsVisibility = () => {
+    cards.forEach((card, index) => {
+      const isVisible =
+        index >= currentStep * visibleCards &&
+        index < (currentStep + 1) * visibleCards;
+      card.classList.toggle("desktop-only", !isVisible);
+    });
+  };
+
+  const updateSelection = () => {
+    selectionButtons.forEach((button, index) => {
+      button.classList.toggle(
+        "selected",
+        index === currentStep % selectionButtons.length
+      );
+    });
+  };
+
+  const navigate = (direction) => {
+    currentStep = (currentStep + direction + totalSteps) % totalSteps;
+    updateCardsVisibility();
+    updateSelection();
+  };
+
+  updateCardsVisibility();
+  updateSelection();
+
+  prevButton.addEventListener("click", () => navigate(-1));
+  nextButton.addEventListener("click", () => navigate(1));
+
+  selectionButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      currentStep = index;
+      updateCardsVisibility();
+      updateSelection();
+    });
+  });
+});
+
+//GYIK:
 document.addEventListener("DOMContentLoaded", function () {
   const questions = document.querySelectorAll(".question");
 

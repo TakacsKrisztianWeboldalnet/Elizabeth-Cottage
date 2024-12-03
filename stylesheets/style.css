@@ -86,6 +86,10 @@ header {
   z-index: 10;
 }
 
+header a:hover {
+  text-decoration: underline;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -113,6 +117,10 @@ nav {
   gap: 25px;
 }
 
+.menu button a:hover {
+  text-decoration: none;
+}
+
 .desktop-only-menu {
   display: none;
 }
@@ -136,6 +144,51 @@ nav {
   height: 24px;
 }
 
+.sidebar {
+  position: absolute;
+  background-color: black;
+  right: -50%;
+  top: 68px;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  transition: right 0.3s ease-in-out;
+}
+
+.sidebar a {
+  font-size: 20px;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    top: 89px;
+  }
+
+  .sidebar-last {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sidebar {
+    top: 106px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 button {
   padding: 10px 30px;
   border-radius: 20px 0 20px 0;
@@ -146,8 +199,16 @@ button {
   background-color: #68b190;
 }
 
+.green-button:hover {
+  background-color: #4b7a65;
+}
+
 .brown-button {
   background-color: #ab3c20;
+}
+
+.brown-button:hover {
+  background-color: #8b2d16;
 }
 
 .transparent-black-button {
@@ -158,6 +219,14 @@ button {
   color: black;
 }
 
+.transparent-black-button:hover {
+  border: 1px solid rgb(50, 50, 50);
+}
+
+.transparent-black-button:hover a {
+  color: rgb(50, 50, 50);
+}
+
 .transparent-white-button {
   border: 1px solid white;
   background-color: transparent;
@@ -165,6 +234,14 @@ button {
 
 .transparent-white-button a {
   color: white;
+}
+
+.transparent-white-button:hover {
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.transparent-white-button:hover a {
+  color: rgb(200, 200, 200);
 }
 
 #main-section {
@@ -194,7 +271,7 @@ button {
 
 @media screen and (min-width: 992px) {
   #main-section {
-    margin-top: 106px;
+    margin-top: 105px;
   }
 }
 
@@ -812,7 +889,7 @@ p {
 }
 
 .paragraph-link {
-  color: #68B190;
+  color: #68b190;
   text-decoration: underline;
 }
 
@@ -905,7 +982,7 @@ p {
   margin-bottom: 0;
 }
 
-.hiking-route-icons>*:not(:first-child) {
+.hiking-route-icons > *:not(:first-child) {
   border-left: 1px solid black;
 }
 
@@ -1159,6 +1236,12 @@ p {
   background-color: black;
 }
 
+.tourist-attraction-selection-button {
+  background-color: white;
+  padding: 1px 13px;
+  border-radius: 16px;
+}
+
 .tourist-attraction-details h2,
 .tourist-attraction-details h3,
 .tourist-attraction-details p {
@@ -1338,6 +1421,11 @@ p {
   padding: 10px;
 }
 
+.question-header:hover {
+  cursor: pointer;
+  background-color: #cbe3d9;
+}
+
 .question p {
   color: black;
   text-align: left;
@@ -1380,6 +1468,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .footer-links {
