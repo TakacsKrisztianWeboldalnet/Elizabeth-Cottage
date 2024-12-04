@@ -5,7 +5,7 @@
     url("../fonts/swDisplayItalic700.woff2") format("woff2");
 }
 
-.main {
+#main {
   overflow-x: hidden;
 }
 
@@ -20,6 +20,10 @@ button:focus {
   outline: none;
 }
 
+button a:hover {
+  color: white;
+}
+
 img {
   max-width: 100%;
 }
@@ -28,6 +32,10 @@ a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+}
+
+a:hover {
+  color: rgb(200, 200, 200);
 }
 
 h1,
@@ -84,10 +92,6 @@ header {
   width: 100%;
   background-color: black;
   z-index: 10;
-}
-
-header a:hover {
-  text-decoration: underline;
 }
 
 nav {
@@ -943,6 +947,37 @@ p {
   color: black;
 }
 
+.full-text-tour {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 99%;
+}
+
+.close-button-tour {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 550px) {
+  .full-text-tour {
+    width: 80%;
+    padding: 20px;
+    padding-top: 10px;
+  }
+}
+
 .hiking-route-map {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1070,6 +1105,20 @@ p {
 .hiking-download {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 450px) {
+  .hiking-tour-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .hiking-tour-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1337,6 +1386,37 @@ p {
   }
 }
 
+.full-text-attraction {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 99%;
+}
+
+.close-button-attraction {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 550px) {
+  .full-text-attraction {
+    width: 80%;
+    padding: 20px;
+    padding-top: 10px;
+  }
+}
+
 #our-valuable-places {
   padding: 30px;
 }
@@ -1468,10 +1548,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 .footer-links {

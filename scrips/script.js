@@ -94,6 +94,43 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//Bővebb szöveg modal:
+const moreTextButtonTour = document.querySelector('.more-text-tour');
+const fullTextModalTour = document.querySelector('.full-text-tour');
+const closeButtonTour = document.querySelector('.close-button-tour');
+
+moreTextButtonTour.addEventListener('click', () => {
+  fullTextModalTour.style.display = 'flex';
+});
+
+closeButtonTour.addEventListener('click', () => {
+  fullTextModalTour.style.display = 'none';
+});
+
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    fullTextModalTour.style.display = 'none';
+  }
+});
+
+const moreTextButtonAttraction = document.querySelector('.more-text-attraction');
+const fullTextModalAttraction = document.querySelector('.full-text-attraction');
+const closeButtonAttraction = document.querySelector('.close-button-attraction');
+
+moreTextButtonAttraction.addEventListener('click', () => {
+  fullTextModalAttraction.style.display = 'flex';
+});
+
+closeButtonAttraction.addEventListener('click', () => {
+  fullTextModalAttraction.style.display = 'none';
+});
+
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    fullTextModalAttraction.style.display = 'none';
+  }
+});
+
 //GYIK:
 document.addEventListener("DOMContentLoaded", function () {
   const questions = document.querySelectorAll(".question");
