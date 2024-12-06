@@ -131,6 +131,22 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
+document.querySelector('.close-button-tour').addEventListener('mouseover', function () {
+  this.src = './images/xmark-solid-red.svg';
+});
+
+document.querySelector('.close-button-tour').addEventListener('mouseout', function () {
+  this.src = './images/xmark-solid.svg';
+});
+
+document.querySelector('.close-button-attraction').addEventListener('mouseover', function () {
+  this.src = './images/xmark-solid-red.svg';
+});
+
+document.querySelector('.close-button-attraction').addEventListener('mouseout', function () {
+  this.src = './images/xmark-solid.svg';
+});
+
 //GYIK:
 document.addEventListener("DOMContentLoaded", function () {
   const questions = document.querySelectorAll(".question");

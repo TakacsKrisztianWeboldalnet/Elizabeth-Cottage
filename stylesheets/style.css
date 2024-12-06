@@ -5,6 +5,10 @@
     url("../fonts/swDisplayItalic700.woff2") format("woff2");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #main {
   overflow-x: hidden;
 }
@@ -225,6 +229,7 @@ button {
 
 .transparent-black-button:hover {
   border: 1px solid rgb(50, 50, 50);
+  color: rgb(50, 50, 50);
 }
 
 .transparent-black-button:hover a {
@@ -970,11 +975,18 @@ p {
   align-self: flex-end;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   .full-text-tour {
     width: 80%;
+    top: 59%;
     padding: 20px;
     padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .full-text-tour {
+    width: 60%;
   }
 }
 
@@ -1409,11 +1421,18 @@ p {
   align-self: flex-end;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   .full-text-attraction {
     width: 80%;
+    top: 59%;
     padding: 20px;
     padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .full-text-attraction {
+    width: 60%;
   }
 }
 
